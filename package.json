@@ -45,11 +45,15 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@bloomberg/record-tuple-polyfill": "^0.0.4",
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.17",
+    "@mui/material": "^5.12.3",
     "primereact": "^9.3.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "sass": "^1.59.3"
   }

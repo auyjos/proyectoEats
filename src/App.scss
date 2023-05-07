@@ -1,0 +1,91 @@
+body {
+  color: #000000;
+  font-family: UberMoveText, sans-serif;
+}
+
+.menu-wrapper {
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  min-width: 0px;
+  list-style: none;
+  text-align: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  .menu-iconos-header {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    /*&::-webkit-scrollbar {
+            display: none;
+        }*/
+  }
+
+  .icono-imagen {
+    width: 60px;
+    height: 60px;
+
+    &:hover {
+      background-color: rgb(226, 226, 226);
+      cursor: pointer;
+    }
+  }
+
+  .icono-comida {
+    max-width: 80px;
+    p {
+      font-weight: bold;
+      font-size: 12px;
+      color: black;
+    }
+  }
+}
+
+.drop-down {
+  position: sticky;
+  overflow-y: hidden;
+  display: flex;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+
+.container-drop {
+  width: 20%;
+}
+
+.wrap-buttons {
+  padding: 4px;
+  background: #eeeeee;
+  height: 48px;
+  border-radius: 300px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.button-direccion {
+  background: #eeeeee;
+}
+
+.sesion {
+  height: 16px;
+  width: 16px;
+}
+.carrito {
+  height: 16px;
+  width: 16px;
+  background-color: #eeeeee;
+}
+.botones-precio {
+  display: inline-block;
+}
+
+.imagenes-boton {
+  height: 16px;
+  width: 16px;
+}
+
+.switch-boton {
+  cursor: pointer;
+}
