@@ -127,42 +127,134 @@ const IconoComida = (props) => {
 const cardComida = [
   {
     id: "1",
-    body: "Soy una carta",
-    desc: "Hola",
-    tituloBadge: "Soy un badge",
-    tituloboton: "Soy un botón",
-    costo: "",
-    rating: "",
-    tiempo: "",
-    img: "https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg",
+    body: "Mcdonald's - Ciudad Real",
+    desc: "Costo de envío: ",
+    tituloBadge: "",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q6 • ",
+    rating: "4.6",
+    tiempo: "20-35 min",
+    img: "https://cn-geo1.uber.com/image-proc/resize/eats/format=webp/width=550/height=440/quality=70/srcb64=aHR0cHM6Ly9kdXl0NGg5bmZuajUwLmNsb3VkZnJvbnQubmV0L3Jlc2l6ZWQvMTUzMTE3OTY0MjYzOC13NTUwLTRkLmpwZw==",
+  },
+  {
+    id: "2",
+    body: "San Martín - Petapa",
+    desc: "Costo de envío: ",
+    tituloBadge: "",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q6 • ",
+    rating: "4.7",
+    tiempo: "20-40 min",
+    img: "https://d1ralsognjng37.cloudfront.net/70ac3aa7-1d2e-4792-84b5-ddf30adf248b.jpeg",
+  },
+
+  {
+    id: "3",
+    body: "Pollo Campero - C.C Plaza Atanasio",
+    desc: "Costo de envío: ",
+    tituloBadge: "",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q6 • ",
+    rating: "4.5",
+    tiempo: "20-35 min",
+    img: "https://d1ralsognjng37.cloudfront.net/d2ffb26c-3997-45f7-a1a8-f7f57809cd97.jpeg",
+  },
+
+  {
+    id: "4",
+    body: "Wendy's - Aguilar Batres",
+    desc: "Costo de envío: ",
+    tituloBadge: "",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q12 • ",
+    rating: "4.7",
+    tiempo: "40-55 min",
+    img: "https://tb-static.uber.com/prod/image-proc/processed_images/80aa589feb4f494a2962d92e391e8bcb/ffd640b0f9bc72838f2ebbee501a5d4b.jpeg",
   },
 ];
 
 const cardComidaFavorita = [
   {
     id: "1",
-    body: "Soy una carta 2",
-    desc: "Hola 2",
-    tituloBadge: "Soy un badge 2",
-    tituloboton: "Soy un botón 2",
-    costo: "",
-    rating: "",
-    tiempo: "",
-    img: "https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg",
+    body: "San Martín - Petapa",
+    desc: "Costo de envío: ",
+    tituloBadge: "",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q6 • ",
+    rating: "4.7",
+    tiempo: "20-40 min",
+    img: "https://d1ralsognjng37.cloudfront.net/70ac3aa7-1d2e-4792-84b5-ddf30adf248b.jpeg",
   },
   {
-    id: "1",
-    body: "Soy una carta 3",
-    desc: "Hola 3",
-    tituloBadge: "Soy un badge 2",
-    tituloboton: "Soy un botón 2",
-    costo: "",
-    rating: "",
-    tiempo: "",
-    img: "https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg",
+    id: "2",
+    body: "Starbucks Américas",
+    desc: "Costo de envío: ",
+    tituloBadge: "",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q11 • ",
+    rating: "4.8",
+    tiempo: "35-50 min",
+    img: "https://d1ralsognjng37.cloudfront.net/7f2b0b76-7059-4b29-8ba3-1f643125eed3.jpeg",
+  },
+  {
+    id: "3",
+    body: "Muriel Postres Gourmet",
+    desc: "Costo de envío: ",
+    tituloBadge: "",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q12 • ",
+    rating: "4.8",
+    tiempo: "45-60 min",
+    img: "https://d1ralsognjng37.cloudfront.net/0a97850f-1e51-4501-8ad5-45ba0366b2c0",
+  },
+  {
+    id: "4",
+    body: "Tre fratellli - Pradera Vistares",
+    desc: "Costo de envío: ",
+    tituloBadge: "",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q12 • ",
+    rating: "4.7",
+    tiempo: "35-50 min",
+    img: "https://tb-static.uber.com/prod/image-proc/processed_images/124dfaf6e2598785e17d840d919ebed5/97ef7458dde62fa918635bc21265d9f5.jpeg",
   },
 ];
+const cardOfertasHoy = [
+  {
+    id: "1",
+    body: "Subway - El Recreo",
+    desc: "Costo de envío: ",
+    tituloBadge: "Ahorros exclusivos",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q12 • ",
+    rating: "4.7",
+    tiempo: "20-40 min",
+    img: "https://d1ralsognjng37.cloudfront.net/d5a8ada3-0d95-474f-b24c-4c48625060cb.jpeg",
+  },
 
+  {
+    id: "2",
+    body: "Plantiful - Zona 14",
+    desc: "Costo de envío: ",
+    tituloBadge: "Costo de envío de Q 0 (gasto de Q 65)",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q12 • ",
+    rating: "",
+    tiempo: "40-55 min",
+    img: "https://tb-static.uber.com/prod/image-proc/processed_images/afde9163e4bb34cd6545b91a5fccf761/ffd640b0f9bc72838f2ebbee501a5d4b.jpeg",
+  },
+  {
+    id: "3",
+    body: "Marcas Mundiales (Zona 9)",
+    desc: "Costo de envío: ",
+    tituloBadge: "Costo de envío de Q 0 (gasto de Q 65)",
+    tituloboton: "https://www.svgrepo.com/download/13666/heart.svg",
+    costo: "Q12 • ",
+    rating: "5.0",
+    tiempo: "45-60 min",
+    img: "https://tb-static.uber.com/prod/image-proc/processed_images/9ed68b28a98f0fe6ba8c39d6f9e34925/97ef7458dde62fa918635bc21265d9f5.jpeg",
+  },
+];
 export default function App() {
   return (
     <>
@@ -220,14 +312,24 @@ export default function App() {
       <div className="cartas-principales">
         <Row>
           <Col xs={4}>
-            <CardOfertas></CardOfertas>
+            <h2> ¿Se te antoja? Pídelo</h2>
+            <p> Busca un restaurante, tipo de comida o plato favorito</p>
           </Col>
 
           <Col xs={4}>
-            <CardOfertas></CardOfertas>
+            <CardOfertas img="https://d1g1f25tn8m2e6.cloudfront.net/bca9b7f3-1e95-4b71-a816-3343a96dd6dd.jpg">
+              <h2>
+                {" "}
+                Disfruta de 4 Muffin de Huevo y Jamón + 4 Galletas a Q108{" "}
+              </h2>
+              <p> Subway </p>
+            </CardOfertas>
           </Col>
           <Col xs={4}>
-            <CardOfertas></CardOfertas>
+            <CardOfertas img="https://d1g1f25tn8m2e6.cloudfront.net/a89b72d3-408e-4754-9950-b5f2c999ab42.jpg">
+              <h2> ¡Disfruta tus desayunos favoritos 2x1! </h2>
+              <p> Trefrateli </p>
+            </CardOfertas>
           </Col>
         </Row>
       </div>
@@ -245,19 +347,23 @@ export default function App() {
           <div>
             <AccordionComponent Name="De Uber Eats">
               <Form>
-                <Form.Check
-                  className="switch-boton"
-                  type="switch"
-                  id="custom-switch"
-                  label="Ofertas"
-                />
+                <p>
+                  Ofertas
+                  <Form.Check
+                    className="switch-boton"
+                    type="switch"
+                    id="custom-switch"
+                  />
+                </p>
 
-                <Form.Check
-                  className="switch-boton"
-                  type="switch"
-                  id="custom-switch"
-                  label="Mejor valorados"
-                />
+                <p>
+                  Mejor Valorados
+                  <Form.Check
+                    className="switch-boton"
+                    type="switch"
+                    id="custom-switch"
+                  />
+                </p>
               </Form>
             </AccordionComponent>
           </div>
@@ -305,62 +411,30 @@ export default function App() {
             </AccordionComponent>
           </div>
         </Container>
-        <div>
-          <Container>
-            <h1>Opciones más populares: Desayuno y brunch</h1>
-            <Row xs={1} md={6} className="g-4">
-              {Array.from({ length: 4 }).map((_, idx) => (
-                <Col>
-                  <CardComponent
-                    card={{
-                      img: "https://d1g1f25tn8m2e6.cloudfront.net/42ed7e35-0836-4207-a199-98817858b5e3.jpg",
-                    }}
-                  ></CardComponent>
-                  <h4>Pollo Campero - Zona 12 Petapa</h4>
-                </Col>
-              ))}
-            </Row>
-            <h1>Ofertas de hoy</h1>
-            <Row xs={1} md={6} className="g-4">
-              <Col>
-                <CardComponent
-                  card={{
-                    img: "https://d1g1f25tn8m2e6.cloudfront.net/42ed7e35-0836-4207-a199-98817858b5e3.jpg",
-                  }}
-                >
-                  <h1>jdkfsafjdaskljdssldkjfslkdf</h1>
-                </CardComponent>
-              </Col>
-              <Col>
-                <CardComponent
-                  card={{
-                    img: "https://d1g1f25tn8m2e6.cloudfront.net/42ed7e35-0836-4207-a199-98817858b5e3.jpg",
-                    tituloBadge: "tituloBadge",
-                  }}
-                ></CardComponent>
-              </Col>
-              <Col>
-                <CardComponent
-                  card={{
-                    img: "https://d1g1f25tn8m2e6.cloudfront.net/42ed7e35-0836-4207-a199-98817858b5e3.jpg",
-                    tituloBoton: "tituloboton",
-                  }}
-                >
-                  <CardComponent
-                    card={{
-                      img: "https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg",
-                      tituloBadge: "tituloBadge",
-                    }}
-                  ></CardComponent>
-                </CardComponent>
-              </Col>
-            </Row>
-          </Container>
 
+        <div>
+          <div>
+            <h1>Opciones más populares: Desayuno y brunch</h1>
+            <Container>
+              <div className="menu-wrapper-cards">
+                <Row xs={2} md={4} className="menu-cardComida">
+                  {cardComida.map((card) => {
+                    return (
+                      <Col>
+                        <CardComponent key={card.nombre} card={card} />
+                      </Col>
+                    );
+                  })}
+                </Row>
+              </div>
+            </Container>
+          </div>
+
+          <h1>Populares cerca de ti</h1>
           <Container>
             <div className="menu-wrapper-cards">
-              <Row xs={1} md={6} className="menu-cardComida">
-                {cardComida.map((card) => {
+              <Row xs={2} md={4} className="menu-cardComida">
+                {cardComidaFavorita.map((card) => {
                   return (
                     <Col>
                       <CardComponent key={card.nombre} card={card} />
@@ -371,10 +445,11 @@ export default function App() {
             </div>
           </Container>
 
+          <h1>Ofertas de hoy</h1>
           <Container>
             <div className="menu-wrapper-cards">
-              <Row xs={1} md={6} className="menu-cardComida">
-                {cardComidaFavorita.map((card) => {
+              <Row xs={2} md={4} className="menu-cardComida">
+                {cardOfertasHoy.map((card) => {
                   return (
                     <Col>
                       <CardComponent key={card.nombre} card={card} />

@@ -2,6 +2,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
 import "./CardComponent.scss";
+import Image from "react-bootstrap/Image";
 
 function CardComponent(props) {
   console.log(props);
@@ -12,13 +13,28 @@ function CardComponent(props) {
 
       <Card.ImgOverlay className="img-overlay">
         {card.tituloBadge && (
-          <Badge pill bg="primary">
+          <Badge pill bg="success">
             {card.tituloBadge}
           </Badge>
         )}
-        {card.tituloBoton && <Button>{card.tituloBoton}</Button>}
+        {card.tituloboton && (
+          <Image className="imagen-corazon" src={card.tituloboton}></Image>
+        )}
       </Card.ImgOverlay>
-      <Card.Body>{props.children}</Card.Body>
+      <Card.Body>
+        <h4>
+          {card.body}{" "}
+          <small>
+            <Badge pill bg="secondary">
+              {card.rating}
+            </Badge>{" "}
+          </small>
+        </h4>
+
+        <p>
+          {card.desc} {card.costo} {card.tiempo}
+        </p>
+      </Card.Body>
     </Card>
   );
 }

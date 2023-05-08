@@ -30,3 +30,18 @@
   padding: 5px;
   border-top: none;
 }
+
+.accordion-button:not(.collapsed) {
+  color: #0e0e0e;
+  background-color: #ffffff;
+  box-shadow: none;
+  border: none;
+}
+
+.accordion {
+  --bs-accordion-border-color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0e0e0e;
+}

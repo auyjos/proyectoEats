@@ -1,3 +1,35 @@
 .card-img {
-  max-width: 322px;
+  width: 100%;
+  height: 145px;
+}
+
+.card-body {
+  background-color: rgb(255, 255, 255);
+
+  h4 {
+    color: black;
+  }
+  p {
+    color: black;
+  }
+}
+
+.card-img-overlay {
+  position: absolute;
+}
+
+.card {
+  --bs-card-border-color: rgb(255 255 255 / 100%);
+}
+
+.imagen-corazon {
+  width: 16px;
+  height: 16px;
+  right: 10px;
+  position: absolute;
+}
+.imagen-corazon:hover {
+  cursor: pointer;
+  background-color: adjust-hue($color: #e11a1a9f, $degrees: 0);
+  fill: #e11a1a9f;
 }
