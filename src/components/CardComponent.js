@@ -1,19 +1,22 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
-import "../CardComponent.scss";
+import "./CardComponent.scss";
 
-function CardComponent(props, img) {
+function CardComponent(props) {
+  console.log(props);
+  const { card } = props;
   return (
     <Card className="bg-dark text-white">
-      <Card.Img src={props.img} />
+      {card.img && <Card.Img src={card.img} />}
+
       <Card.ImgOverlay className="img-overlay">
-        {props.tituloBadge && (
+        {card.tituloBadge && (
           <Badge pill bg="primary">
-            {props.tituloBadge}
+            {card.tituloBadge}
           </Badge>
         )}
-        {props.tituloBoton && <Button>{props.tituloBoton}</Button>}
+        {card.tituloBoton && <Button>{card.tituloBoton}</Button>}
       </Card.ImgOverlay>
       <Card.Body>{props.children}</Card.Body>
     </Card>

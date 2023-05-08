@@ -18,6 +18,7 @@ import "./App.scss";
 import AccordionComponent from "./components/AccordionComponent.js";
 import RadioComponent from "./components/RadioComponent.js";
 import Form from "react-bootstrap/Form";
+import CardOfertas from "./components/CardOfertasComponent.js";
 const iconosComida = [
   {
     nombre: "Ofertas",
@@ -123,21 +124,42 @@ const IconoComida = (props) => {
   );
 };
 
-const CardComida = (props) => {
-  const { card } = props;
-  return <CardComponent></CardComponent>;
-};
-
 const cardComida = [
   {
-    body: "Hola",
-    desc: "",
-    tituloBadge: "",
-    tituloboton: "",
+    id: "1",
+    body: "Soy una carta",
+    desc: "Hola",
+    tituloBadge: "Soy un badge",
+    tituloboton: "Soy un botón",
     costo: "",
     rating: "",
     tiempo: "",
-    img: "",
+    img: "https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg",
+  },
+];
+
+const cardComidaFavorita = [
+  {
+    id: "1",
+    body: "Soy una carta 2",
+    desc: "Hola 2",
+    tituloBadge: "Soy un badge 2",
+    tituloboton: "Soy un botón 2",
+    costo: "",
+    rating: "",
+    tiempo: "",
+    img: "https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg",
+  },
+  {
+    id: "1",
+    body: "Soy una carta 3",
+    desc: "Hola 3",
+    tituloBadge: "Soy un badge 2",
+    tituloboton: "Soy un botón 2",
+    costo: "",
+    rating: "",
+    tiempo: "",
+    img: "https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg",
   },
 ];
 
@@ -195,47 +217,19 @@ export default function App() {
         </div>
       </Container>
 
-      {/* <Container>
-        <div className="menu-wrapper-cards">
-          <Row className="menu-cardComida">
-            {cardComida.map((card) => {
-              return <CardComponent key={card.nombre} card={card} />;
-            })}
-          </Row>
-        </div>
-      </Container> */}
-
       <div className="cartas-principales">
-        <Container>
-          <div>
-            <Row>
-              <Col xs={6}>
-                <h1>¿Se te antoja? Pídelo</h1>
-                <p>Busca un restaurante, tipo de comida o plato favorito.</p>
-              </Col>
+        <Row>
+          <Col xs={4}>
+            <CardOfertas></CardOfertas>
+          </Col>
 
-              <Col xs={2}>
-                <CardComponent img="https://d1g1f25tn8m2e6.cloudfront.net/f01cd9c9-6088-4ef9-9e57-c2242abe166e.jpeg">
-                  <h5>Disfruta de los mejores platillos asiáticos en</h5>
-                  <p>Mr.Sushi</p>
-                </CardComponent>
-              </Col>
-
-              <Col xs={2}>
-                <CardComponent img="https://d1g1f25tn8m2e6.cloudfront.net/42ed7e35-0836-4207-a199-98817858b5e3.jpg">
-                  <h5>Hasta 2x1 en los mejores restaurantes</h5>
-                  <p>#Orgullo Chapin</p>
-                </CardComponent>
-              </Col>
-              <Col xs={2}>
-                <CardComponent img="https://d1g1f25tn8m2e6.cloudfront.net/01fad6a6-cdd8-4566-9eeb-c9356dd41ef4.png">
-                  <h5>Costo de Envío Gratis en compras mínimas de Q100</h5>
-                  <p>Con Shell Select</p>
-                </CardComponent>
-              </Col>
-            </Row>
-          </div>
-        </Container>
+          <Col xs={4}>
+            <CardOfertas></CardOfertas>
+          </Col>
+          <Col xs={4}>
+            <CardOfertas></CardOfertas>
+          </Col>
+        </Row>
       </div>
 
       <div className="drop-down">
@@ -317,7 +311,11 @@ export default function App() {
             <Row xs={1} md={6} className="g-4">
               {Array.from({ length: 4 }).map((_, idx) => (
                 <Col>
-                  <CardComponent img="https://d1ralsognjng37.cloudfront.net/eee8f944-247a-407f-8814-3501ac5d6916.jpeg"></CardComponent>
+                  <CardComponent
+                    card={{
+                      img: "https://d1g1f25tn8m2e6.cloudfront.net/42ed7e35-0836-4207-a199-98817858b5e3.jpg",
+                    }}
+                  ></CardComponent>
                   <h4>Pollo Campero - Zona 12 Petapa</h4>
                 </Col>
               ))}
@@ -325,28 +323,66 @@ export default function App() {
             <h1>Ofertas de hoy</h1>
             <Row xs={1} md={6} className="g-4">
               <Col>
-                <CardComponent img="https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg">
+                <CardComponent
+                  card={{
+                    img: "https://d1g1f25tn8m2e6.cloudfront.net/42ed7e35-0836-4207-a199-98817858b5e3.jpg",
+                  }}
+                >
                   <h1>jdkfsafjdaskljdssldkjfslkdf</h1>
                 </CardComponent>
               </Col>
               <Col>
                 <CardComponent
-                  img="https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg"
-                  tituloBadge="tituloBadge"
+                  card={{
+                    img: "https://d1g1f25tn8m2e6.cloudfront.net/42ed7e35-0836-4207-a199-98817858b5e3.jpg",
+                    tituloBadge: "tituloBadge",
+                  }}
                 ></CardComponent>
               </Col>
               <Col>
                 <CardComponent
-                  img="https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg"
-                  tituloBoton="tituloboton"
+                  card={{
+                    img: "https://d1g1f25tn8m2e6.cloudfront.net/42ed7e35-0836-4207-a199-98817858b5e3.jpg",
+                    tituloBoton: "tituloboton",
+                  }}
                 >
                   <CardComponent
-                    img="https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg"
-                    tituloBadge="tituloBadge"
+                    card={{
+                      img: "https://d1ralsognjng37.cloudfront.net/57ad101e-0a44-4a63-a1cb-19cd02ae05ae.jpeg",
+                      tituloBadge: "tituloBadge",
+                    }}
                   ></CardComponent>
                 </CardComponent>
               </Col>
             </Row>
+          </Container>
+
+          <Container>
+            <div className="menu-wrapper-cards">
+              <Row xs={1} md={6} className="menu-cardComida">
+                {cardComida.map((card) => {
+                  return (
+                    <Col>
+                      <CardComponent key={card.nombre} card={card} />
+                    </Col>
+                  );
+                })}
+              </Row>
+            </div>
+          </Container>
+
+          <Container>
+            <div className="menu-wrapper-cards">
+              <Row xs={1} md={6} className="menu-cardComida">
+                {cardComidaFavorita.map((card) => {
+                  return (
+                    <Col>
+                      <CardComponent key={card.nombre} card={card} />
+                    </Col>
+                  );
+                })}
+              </Row>
+            </div>
           </Container>
         </div>
       </div>
