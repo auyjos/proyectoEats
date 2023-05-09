@@ -19,6 +19,8 @@ import AccordionComponent from "./components/AccordionComponent.js";
 import RadioComponent from "./components/RadioComponent.js";
 import Form from "react-bootstrap/Form";
 import CardOfertas from "./components/CardOfertasComponent.js";
+import { slide as Menu } from "react-burger-menu";
+
 const iconosComida = [
   {
     nombre: "Ofertas",
@@ -258,7 +260,26 @@ const cardOfertasHoy = [
 export default function App() {
   return (
     <>
-      <div>
+      <div className="page-wrapper">
+        <div className="ham-wrapper">
+          <Menu>
+            <Button variant="dark">Regístrate</Button>
+            <Button variant="light">Iniciar Sesión</Button>
+            <p>Crear una cuenta de negocios</p>
+            <p>Agrega tu restaurante</p>
+            <p>Regístrate para realizar entregas</p>
+            <div className="div-footer">
+              <Image
+                className="imagen-footer"
+                src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/31ee382bd0e6ed84.svg"
+              />
+              <p>Hay mucho más</p>
+              <p>que te encantará en la app</p>
+              <Button variant="light">iPhone</Button>
+              <Button variant="light">Android</Button>
+            </div>
+          </Menu>
+        </div>
         <NavbarComponent>
           <div className="wrap-buttons">
             <div>
@@ -299,15 +320,13 @@ export default function App() {
         </NavbarComponent>
       </div>
 
-      <Container>
-        <div className="menu-wrapper">
-          <Row className="menu-iconos-header">
-            {iconosComida.map((comida) => {
-              return <IconoComida key={comida.nombre} comida={comida} />;
-            })}
-          </Row>
-        </div>
-      </Container>
+      <div className="menu-wrapper">
+        <Row className="menu-iconos-header">
+          {iconosComida.map((comida) => {
+            return <IconoComida key={comida.nombre} comida={comida} />;
+          })}
+        </Row>
+      </div>
 
       <div className="cartas-principales">
         <Row>

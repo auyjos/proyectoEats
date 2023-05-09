@@ -1,6 +1,10 @@
 body {
-  color: #000000;
-  font-family: UberMoveText, sans-serif;
+  max-width: 1500px;
+  color: #000;
+  font-family: "UberMoveText", sans-serif;
+  margin: 0px;
+  display: flex;
+  align-content: center;
 }
 
 .menu-wrapper {
@@ -51,11 +55,12 @@ body {
 }
 
 .drop-down {
+  overflow-x: auto;
   position: sticky;
   overflow-y: hidden;
   display: flex;
   flex-basis: auto;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .container-drop {
@@ -109,4 +114,14 @@ input[type="range"]::-webkit-slider-thumb {
 }
 input[type="range"]::-ms-thumb {
   background: black !important;
+}
+
+.page-wrapper {
+  max-width: 1400px;
+  display: flex;
+}
+
+.form-check-input:checked {
+  background-color: #000000;
+  border-color: #000000;
 }

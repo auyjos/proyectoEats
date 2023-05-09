@@ -81,3 +81,26 @@
   overflow-clip-margin: content-box;
   overflow: clip;
 }
+
+.navbar-expand {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  right: -100px;
+  display: flex;
+  max-width: 1400px;
+  min-width: fit-content;
+}
+
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-sm,
+.navbar > .container-md,
+.navbar > .container-lg,
+.navbar > .container-xl,
+.navbar > .container-xxl {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+}
