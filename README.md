@@ -6,12 +6,12 @@ nuevas tecnologías e implementarlas de forma eficiente.
 
 
 
-Como se debe de instalar:
+   Como se debe de instalar:
   npm install - Esto instalará todas las dependendecias del proyecto
   npm run start-webpack
 
-     Como ver el proyecto:
-  Abrir con live server el index.html de dist_app 
+   Como ver el proyecto:
+             Abrir con live server el index.html de dist_app 
 
     Tecnologías utilizadas:
 NPM: NPM significa Node Package Manager, es un gestor de paquetes para JavaScript que se utiliza principalmente para instalar y gestionar dependencias de proyectos. NPM tiene un repositorio en línea donde los desarrolladores pueden publicar y compartir paquetes que pueden ser descargados e integrados en sus proyectos.
