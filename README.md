@@ -4,9 +4,12 @@
 El proyecto consiste en replicar la página de Uber Eats con la finalidad de aplicar todos los conocimientos de desarrollo web que se han visto en clase, al igual que intentar aplicar
 nuevas tecnologías e implementarlas de forma eficiente.
 
-sql
-Copy code
-npm start
+COMO INSTALAR:
+
+npm install
+npm run startwebpack ( para compilar)
+
+
 
 
    Como ver el proyecto:
